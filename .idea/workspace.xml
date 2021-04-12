@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4ac9bfa-f382-429a-a63e-abb661ba2be9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.devcontainer/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/.devcontainer/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.devcontainer/devcontainer.json" beforeDir="false" afterPath="$PROJECT_DIR$/.devcontainer/devcontainer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,10 +38,10 @@
       <screen x="1999" y="814" width="2841" height="1540" />
     </state>
     <state x="2387" y="1069" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/1999.814.2841.1540@1999.814.2841.1540" timestamp="1618252147579" />
-    <state x="411" y="354" key="SettingsEditor" timestamp="1618253932922">
-      <screen x="202" y="204" width="2841" height="1540" />
+    <state x="2208" y="964" key="SettingsEditor" timestamp="1618255390506">
+      <screen x="1999" y="814" width="2841" height="1540" />
     </state>
-    <state x="2208" y="964" key="SettingsEditor/1999.814.2841.1540@1999.814.2841.1540" timestamp="1618252127752" />
+    <state x="2208" y="964" key="SettingsEditor/1999.814.2841.1540@1999.814.2841.1540" timestamp="1618255390506" />
     <state x="411" y="354" key="SettingsEditor/202.204.2841.1540@202.204.2841.1540" timestamp="1618253932922" />
   </component>
 </project>
