@@ -17,14 +17,12 @@
 		}
 	},
 
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// Forward the Projector port.
 	"forwardPorts": [8887],
 
+	// Hack to ensure that Intellij settings are persisted when the CodeSpace is suspended or rebuilt.
 	"containerEnv": { "HOME":"/workspaces/.codespaces/.persistedshare"},
 
-	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "/run.sh",
-
-	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
-	// "remoteUser": "vscode"
+	// Start Intellij with Projector.
+	"postStartCommand": "/run.sh",
 }
