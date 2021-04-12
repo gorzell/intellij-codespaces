@@ -1,7 +1,6 @@
 FROM registry.jetbrains.team/p/prj/containers/projector-idea-c
 
 USER root
-ENV HOME /root
 
 RUN apt-get update \
     && apt-get install -y \
