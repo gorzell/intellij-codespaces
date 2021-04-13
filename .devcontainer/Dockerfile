@@ -1,7 +1,12 @@
+# This defaults to Intellij Community Edition, but you should be able to use any JetBrains IDE they publish an image for.
+# https://github.com/JetBrains/projector-docker#run-jetbrains-ide-in-docker
 FROM registry.jetbrains.team/p/prj/containers/projector-idea-c
 
+# The JetBrains images add a non-root user, which is probably a good thing, but doesn't provide a path to install further software, which we need to do.
+# Also, Codespaces generally default to running as `root` so this might align better with how they function.
 USER root
 
+# Install SDKs and other tools you may need here.
 RUN apt-get update \
     && apt-get install -y \
     build-essential \
@@ -13,8 +18,6 @@ RUN apt-get update \
     libssl-dev \
     lldb \
     procps \
-    # linux-tools-common \
-    # linux-tools-generic \
     # Install Docker CE CLI
     && apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common lsb-release \
     && curl -fsSL https://download.docker.com/linux/$(lsb_release -is | tr '[:upper:]' '[:lower:]')/gpg | (OUT=$(apt-key add - 2>&1) || echo $OUT) \
